@@ -162,10 +162,18 @@ var multiply = [0, 1, 2, 3].reduce(function (a, b) {
 	return a * b;
 });
 
+// class A {
+// 	name;
+// 	constructor() {
+// 		this.name = 'ali';
+// 	}
+// }
+
 // JS de extension ile bir sınıfın özelliklerin c# daki extension sınıflar gibi güncellemek için Prototype üzerinden işlem yapıyoruz
 Array.prototype.avg = function () {
 	let result = 0;
 
+	// this bulunduğu scope daki nesnenin refransı erişmemizi sağlar
 	console.log('this', this); // c# extensions this ile arasında bir fark var.
 
 	for (let index = 0; index < this.length; index++) {
